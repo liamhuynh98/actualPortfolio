@@ -2,7 +2,7 @@
 
 ICONS SOURCES: https://iconscout.com/unicons
 
-SWIPER SOURCE: https://swiperjs.com/demos, installed swiper-bundle.min.css
+SWIPER SOURCE: https://swiperjs.com/demos, installed swiper-bundle.min.css, swiper-bundle.min.js
 
 GOOGLE FONT SOURCES: https://fonts.google.com/specimen/DynaPuff
 
