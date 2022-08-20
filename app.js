@@ -56,14 +56,30 @@ const tabContents = document.querySelectorAll("[data-content");
 tabs.forEach((tab) => {
   tab.addEventListener("click", () => {
     const target = document.querySelector(tab.dataset.target);
-    tabContents.classList.remove("qualification__active");
+
+    tabContents.forEach((tabContent) => {
+      tabContent.classList.remove("qualification__active");
+    });
+    target.classList.add("qualification__active");
+
+    tabs.forEach((tab) => {
+      tab.classList.remove("qualification__active");
+    });
+    tab.classList.add("quafilication__active");
   });
+});
 
-  target.classList.add("qualification__active");
+//portfolio swiper
+var swiper = new Swiper(".mySwiper", {
+  cssMode: true,
+  loop: true,
 
-  tabs.forEach((tab) => {
-    tab.classList.remove("qualification__active");
-  });
-
-  tab.classList.add("qualification__active");
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 });
